@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplode5</title>
+</head>
+<body>
+    <script>
+
+    // palavras filter
+    let palavras = ["Henri", "Nicolas", "Lara", "Miguel", "Basqueroto", "Murilo", "Gustavo"]
+    var M5L = palavras.filter (function (elemento){
+        return elemento.length>5
+    })
+        
+    //  palavras for
+    var palavra = ["Henri", "Nicolas", "Lara", "Miguel", "Basqueroto", "Murilo", "Gustavo", "Luiz"]
+    var Maisq5Letras = []
+
+    for (var indice = 0; indice < palavra.length; indice++) {
+        var maisde5 = palavra[indice]
+
+        if(maisde5.length > 5){
+            Maisq5Letras.push(palavra[indice])
+        }    
+    }    
+
+    console.log(Maisq5Letras)
+
+    </script>
+</body>
+</html>
